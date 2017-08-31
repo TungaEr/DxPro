@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.semptomotor" versionCode = "10" version="1.0.0">
+<!-- versionCode is optional and Android only -->
+
+<name> Semptomotor </name>
+
+<description> Tarar </description>
+
+<author email="semptomotor@gmail.com" href="http://Semptomotor.com"> Semptomotor </author>
+
+<content src="index.html"/>
+
+<access origin="*"/>
+
+
+
+
+<platform name="ios" />
+<platform name="android" />
+<platform name="winphone" />
+
+
+
+<feature name="Device">
+<param name="android-package"
+value="org.apache.cordova.device.Device"
+/>
+</feature>
+
+<!-- Core/Common Preferences -->
+
+
+<preference name="Fullscreen" value="false"/> 
+<preference name="DisallowOverscroll" value="true"/> 
+<preference name="Orientation" value="portrait"/>
+<preference name="HideKeyboardFormAccessoryBar" value="false"/>
+<preference name="BackgroundColor" value="0xff0000ff"/>
+
+
+
+<!--Android Preferences-->
+
+<preference name="KeepRunning" value="false"/> 
+<preference name="LoadUrlTimeoutValue" value="1000"/>
+<preference name="SplashScreen" value="mySplash"/>
+<preference name="SplashScreenDelay" value="1000"/>
+<preference name="InAppBrowserStorageEnabled" value="true"/>
+<preference name="LoadingDialog" value="Yükleniyor,Lütfen Bekleyiniz"/>
+<preference name="LoadingPageDialog" value="Yükleniyor,Lütfen Bekleyiniz"/>
+<preference name="ErrorUrl" value="hata.html"/>
+<preference name="ShowTitle" value="true"/>
+<preference name="LogLevel" value="VERBOSE"/>
+<preference name="SetFullscreen" value="false"/>
+<preference name="AndroidLaunchMode" value="singleTop"/>
+
+
+<icon src="img/icon.png" platform="android" width="57" height="57" density="mdpi"> </icon>
+<splash src="img/icon.png" platform="android" width="57" height="57" density="mdpi"> </splash>
+
+<icon src="img/icon.png" platform="ios" width="57" height="57" density="mdpi"> </icon>
+<splash src="img/icon.png" platform="ios" width="57" height="57" density="mdpi"> </splash>
+
+
+</widget>

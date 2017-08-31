@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<script src="js/semptomvebulgularolustur.js"></script>
+<script src="js/semptomvebulgular_sifiri_doldur_ad.js"></script>
+<script src="js/semptomvebulgular_biri_doldur_id.js"></script>
+<script src="js/hastalikvedurumlarolustur.js"></script>
+<script src="js/hastalikvedurumlar_sifiri_doldur_ad.js"></script>
+<script src="js/hastalikvedurumlar_biri_doldur_id.js"></script>
+<script src="js/eslesmeolustur.js"></script>
+<script src="js/eslesme_sıfır_semptomid.js"></script>
+<script src="js/eslesme_bir_varyok.js"></script>
+<script src="js/eslesme_iki_hastalikid.js"></script>
+<script src="js/otomatik_tamamlama_1.js"></script>
+<script src="js/otomatik_tamamlama_2.js"></script>
+<script src="js/otomatik_tamamlama_3_yenile.js"></script>
+<script src="js/index.js"></script>
+<script src="js/1.js"></script>
+<script src="js/2.js"></script>
+<script src="js/4_yenile.js"></script>
+<script src="js/5.js"></script>
+<script src="js/6.js"></script>
+<script src="js/hoverci.js"></script>
+<script src="js/git_hakkinda.js"></script> 
+
+
+ 
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="css/otomatik_tm.css">
+  <link rel="stylesheet" type="text/css" href="css/radio.css" />
+
+				
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+<title>Semptomotor</title>
+</head>
+<body bgcolor="#045573">
+<div class="w3-top">
+<div  style = "padding:4px 18px; background-color:#014159;">
+</div>
+<div  style = "padding:4px 18px; background-color:#014159;" id="ust_g">
+</div>
+
+<div style = "padding: 1px 0px; color: #ffffff; background-color: #003244;">
+</div>
+</div>    
+<div>
+<div  style = "padding: 6px 18px; background-color:#045573;">
+</div>
+<p></p>
+<div>
+<div>
+<div style="background-color: #045573; padding: 12px 12px;">
+
+<div id="content">
+<div style="width: 70%; float:left"> <div class="row-padding" style="padding: 6px 0px;"></div>
+
+          <form >
+             <input autofocus list="semptomlistesi" 
+			 name="semptomgir" id="semptomgir" 
+			 onclick="this.select()" onkeypress="ekleyen(event)" 
+			 placeholder="Buraya Yazınız" class="arama"
+			 style="color: #045573; padding: 0px 5px; border: 0px solid; border-color: #045573; font-family: calibri; font-size: 18px; display: block; height: 32px; width: 100%; " autofocus/>
+          </form> 
+</div>
+
+
+<div style="width: 18%; float:left">
+
+
+
+
+<div id="content">
+<div style="width: 20%; float:left">
+  <ul>
+  <li>
+    <input class="radioBtn" type="radio" id="f-option" name="selector" checked value="154">
+    <label for="f-option"></label>
+    <div class="check"><div class="inside"><p></p><label for="f-option" onclick="varyuksekyapan()" >H/P</label></div></div>
+  </li>
+
+</ul>
+</div>
+
+<div style="width: 30%; float:right">
+    <ul>
+	<li>
+    <input class="radioBtn" type="radio" id="s-option" name="selector" value="153">
+    <label for="s-option"></label>
+    <div class="check"><div class="inside"><p></p><label for="s-option" onclick="yokdusukyapan()" >L/A</label></div></div>
+    </li>
+    </ul>
+<div class="row-padding" style="padding: 4px 0px;"></div>
+</div>
+</div>
+
+
+<div class="row-padding" style="padding: 4px 0px;"></div>
+
+
+<div class="row-padding" style="padding: 4px 0px;"></div>
+</div>
+
+
+
+
+
+
+</div>
+<div class="row-padding" style="padding: 10px 0px;"></div>
+
+
+
+
+
+
+
+
+
+
+<div class="row-padding" style="padding: 4px 0px;">
+</div>
+<div class="row-padding" style="padding: 20px 0px;">
+</div>
+
+
+
+<div id="content">
+<div style="width: 70%; float:left">
+ <input type="button"
+	     value="Semptom Ekle"
+         style="cursor:pointer; color: #ffffff; background-color: #22b2e5; padding: 0px 5px; border: 0px solid; border-color: #22b2e5; text-align:left; font-family: calibri; font-size: 20px; display: block; height: 32px; width: 100%;" 	
+		 onclick="semptomekleyici()"
+		 onmouseover="degistir(this)"
+		 onmouseout="gerial(this)"
+		 class="buton_g">
+</div>
+<div style="width: 28%; float:right">
+ <input type="button"
+	     value="Çıkar"
+         style="cursor:pointer; color: #ffffff; background-color: #22b2e5; padding: 0px 5px; border: 0px solid; border-color: #22b2e5; text-align:left; font-family: calibri; font-size: 20px; display: block; height: 32px; width: 100%;" 	
+		 onclick="semptomcikarici()"
+		 onmouseover="degistir(this)"
+		 onmouseout="gerial(this)"
+		 class="buton_g">
+		 
+</div>
+
+
+<div  style="padding: 10px 4px;">
+<p></p>
+</div>
+</div>
+		 
+		 
+<div class="row-padding" style="padding: 4px 0px;">
+</div>
+ <textarea 
+ readonly
+ class="kutu_yz" 
+ id="girilensemptomlarlistesi" 
+ style="color: #045573; padding: 0px 5px; border: 0px solid; border-color: #02770b; font-family: calibri; font-size: 18px; display: block; height: 90px; width: 100%; resize: none;" >
+Eklenen Semptomlar...
+</textarea> 
+</div>
+</div>
+<div>
+<div style="background-color: #045573; padding: 8px 12px;">
+<textarea 
+readonly  
+class="kutu_yz" 
+id="sonuclistesi" 
+style="color: #045573; padding: 0px 5px; border: 0px solid; border-color: #04739b; font-family: calibri; font-size: 14px; display: block; height: 240px; width: 100%; resize: none;" >
+Sonuçlar...
+</textarea> 
+<div class="row-padding" style="padding: 14px 0px;">
+</div>
+<div style = "padding: 18px 16px; ">
+</div>	 
+</div>
+</div>
+</div>
+<div class="w3-bottom">
+<div style = "padding: 1px 0px; color: #ffffff; background-color: #003244;">
+</div>
+
+<div class="w3-row-padding" style = "padding: 8px 12px; background-color: #014159;">
+ <input type="button"
+	     value="Hakkında"
+         style="cursor:pointer; color: #ffffff; background-color: #22b2e5; padding: 0px 5px; border: 0px solid; border-color: #22b2e5; text-align:left; font-family: calibri; font-size: 20px; display: block; height: 32px; width: 100%;" 	
+		 onclick="git_hakkinda()"
+		 onmouseover="degistir(this)"
+		 onmouseout="gerial(this)"
+		 class="buton_g">		 
+<div class="w3-row-padding">
+<div class="w3-row-padding"style = "padding: 2px 16px; ">
+
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
